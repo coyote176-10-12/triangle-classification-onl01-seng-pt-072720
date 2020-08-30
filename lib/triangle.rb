@@ -1,6 +1,5 @@
 class Triangle
-  # write code here
-end 
+  
   attr_accessor :x, :y, :z,
   :equilateral, :isosceles, :scalene
 
