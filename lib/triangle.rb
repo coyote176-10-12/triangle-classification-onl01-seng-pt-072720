@@ -11,7 +11,7 @@ class Triangle
 
   def kind
     if x == 0 || y == 0 || z == 0
-      raise TriangleError
+     # raise TriangleError
     elsif x + y <= z || x + z <= y || y + z <= x
       raise TriangleError
     elsif x == y && y == z
