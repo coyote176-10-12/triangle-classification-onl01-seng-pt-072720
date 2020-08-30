@@ -1,6 +1,5 @@
 class Triangle
-  # write code here
-end
+
   attr_accessor :a,:b, :c, :isosceles, :equilateral, :scalene
   class TriangleError < StandardError
   end
