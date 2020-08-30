@@ -8,6 +8,8 @@ class Triangle
     @y = y
     @z = z
   end
+  
+  
 
   def kind
     if x == 0 || y == 0 || z == 0
