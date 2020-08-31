@@ -1,23 +1,23 @@
 class Triangle
 
-  attr_accessor :a,:b, :c, :isosceles, :equilateral, :scalene
+  attr_accessor :x,:y, :z, :isosceles, :equilateral, :scalene
   class TriangleError < StandardError
   end
   def initialize(a,b,c)
-    @a=a
-    @b=b
-    @c=c
+    @x=x
+    @y=y
+    @z=z
   end
   def kind
-if !(@a > 0 && @b >0 && @c >0 && @a+@b >@c && @a+@c >@b && @b+@c > @a)
+if !(@x > 0 && @y >0 && @z >0 && @x+@y >@z && @x+@z >@y && @y+@z > @x)
       raise TriangleError
-    elsif @a == @b && @b == @c
+    elsif @x == @y && @y == @z
       :equilateral
-    elsif @a == @b && @b != @c
+    elsif @x == @y && @y != @z
       :isosceles
-    elsif @b == @c
+    elsif @y == @z
       :isosceles
-    elsif @a == @c
+    elsif @x == @z
       :isosceles
     else
       :scalene
