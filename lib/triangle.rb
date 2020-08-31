@@ -23,7 +23,8 @@ if !(@x > 0 && @y >0 && @z >0 && @x+@y >@z && @x+@z >@y && @y+@z > @x)
     end
   end
   
-  
+  class TriangleError < StandardError
+  end
 
   end
 
