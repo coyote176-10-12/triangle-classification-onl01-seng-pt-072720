@@ -3,7 +3,7 @@ class Triangle
   attr_accessor :x,:y, :z, :isosceles, :equilateral, :scalene
   class TriangleError < StandardError
   end
-  def initialize(a,b,c)
+  def initialize(x,y,z)
     @x=x
     @y=y
     @z=z
