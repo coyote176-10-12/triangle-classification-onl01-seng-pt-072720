@@ -1,8 +1,7 @@
 class Triangle
 
   attr_accessor :x,:y, :z, :isosceles, :equilateral, :scalene
-  class TriangleError < StandardError
-  end
+  
   def initialize(x,y,z)
     @x=x
     @y=y
@@ -23,6 +22,8 @@ if !(@x > 0 && @y >0 && @z >0 && @x+@y >@z && @x+@z >@y && @y+@z > @x)
       :scalene
     end
   end
+  
+  
 
   end
 
